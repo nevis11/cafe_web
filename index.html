@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONYX | Premium Espresso</title>
+    
+    <!-- Unique Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-theme="dark"> 
+    
+    <!-- Custom Inverting Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Artificial Loader -->
+    <div id="loader" class="glass-loader">
+        <h1 class="glitch" data-text="ONYX">ONYX</h1>
+        <div class="loading-bar"><div class="fill"></div></div>
+    </div>
+
+    <!-- Floating Glass Navigation -->
+    <header id="header" class="glass-nav">
+        <a href="#" class="logo">ONYX</a>
+        <nav class="nav-links">
+            <a href="#hero" class="magnetic" data-strength="20">Home</a>
+            <a href="#story" class="magnetic" data-strength="20">Our Story</a>
+            <a href="#menu" class="magnetic" data-strength="20">Menu</a>
+            <a href="#experience" class="magnetic" data-strength="20">Vibe</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="magnetic" data-strength="30">
+                <i class="fas fa-sun"></i>
+            </button>
+            <button id="open-booking-btn" class="btn-glass magnetic" data-strength="40">Reserve</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Unique Asymmetric Hero -->
+        <section id="hero" class="hero-split">
+            <div class="hero-left">
+                <div class="hero-text-wrapper">
+                    <p class="subtitle fade-up">Established 2026</p>
+                    <h1 class="massive-text title-anim">
+                        <span class="block-reveal">AWAKEN</span>
+                        <span class="block-reveal delay-1">YOUR</span>
+                        <span class="block-reveal delay-2 accent">SENSES.</span>
+                    </h1>
+                    <p class="desc fade-up delay-3">Not just coffee. An avant-garde sensory experience crafted for the modern soul.</p>
+                    <div class="cta-group fade-up delay-4">
+                        <a href="#menu" class="btn-solid magnetic" data-strength="50">Discover Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="image-composition">
+                    <div class="blob shape-1"></div>
+                    <div class="blob shape-2"></div>
+                    <div class="main-image parallax-img">
+                        <img src="https://loremflickr.com/1000/1200/espresso,dark?lock=55" alt="Premium Pour">
+                    </div>
+                    <div class="floating-card glassmorphism float-anim">
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <h4>Top Rated</h4>
+                            <p>City's Best 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrolling Text Marquee -->
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <span>PREMIUM ROASTS • ARTISANAL PASTRIES • LATE NIGHT VIBES • </span>
+                <span>PREMIUM ROASTS • ARTISANAL PASTRIES • LATE NIGHT VIBES • </span>
+            </div>
+        </div>
+
+        <!-- The Onyx Philosophy (Detailed Description) -->
+        <section id="story" class="story-section">
+            <div class="container story-grid">
+                <div class="story-text scroll-reveal">
+                    <p class="subtitle">Our Philosophy</p>
+                    <h2 class="syne-heading">ROASTED IN THE <br><span class="accent">SHADOWS.</span></h2>
+                    <p class="desc-large">Born in the heart of the city in 2026, Onyx Espresso was created as an antidote to the fast-paced, noisy world outside. We believe that coffee is more than just caffeine—it's a sacred daily ritual.</p>
+                    <p class="desc-body">Every bean we serve is ethically sourced from high-altitude micro-lots and meticulously roasted in-house. Our space is intentionally designed with minimalist architecture, sound-dampening acoustic panels, and warm ambient lighting. Whether you need a sanctuary for deep focus, a canvas for your creative sessions, or a quiet corner for midnight conversations, Onyx is your space.</p>
+                </div>
+                <div class="story-image scroll-reveal delay-2">
+                    <div class="glassmorphism img-frame">
+                        <img src="https://loremflickr.com/600/700/coffeeroaster,dark?lock=110" alt="Coffee Roasting Process">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horizontal Scroll Menu -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="syne-heading">CURATED<br><span class="accent">SELECTION</span></h2>
+                    
+                    <div class="menu-filters">
+                        <div class="search-box glassmorphism">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="menu-search" placeholder="Type to filter...">
+                        </div>
+                        <div class="tabs" id="menu-tabs">
+                            <button class="tab-pill active" data-category="all">All</button>
+                            <button class="tab-pill" data-category="hot">Hot</button>
+                            <button class="tab-pill" data-category="cold">Cold</button>
+                            <button class="tab-pill" data-category="food">Bites</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Tilt Cards Grid -->
+                <div class="menu-grid" id="menu-container">
+                    <!-- Javascript will populate cards here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Experience Section (Flexbox Accordion) -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <h2 class="syne-heading text-center" style="margin-bottom: 2rem;">THE<br><span class="accent">ONYX</span> VIBE</h2>
+                
+                <div class="accordion-gallery">
+                    <div class="accordion-panel active" style="background-image: url('https://loremflickr.com/800/1000/architecture,dark?lock=101');">
+                        <div class="panel-content">
+                            <h3>The Space</h3>
+                            <p>Minimalist brutalism meets warm acoustics.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-panel" style="background-image: url('https://loremflickr.com/800/1000/barista,dark?lock=102');">
+                        <div class="panel-content">
+                            <h3>The Craft</h3>
+                            <p>Artisanal brewing techniques perfected.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-panel" style="background-image: url('https://loremflickr.com/800/1000/community,dark?lock=103');">
+                        <div class="panel-content">
+                            <h3>The Culture</h3>
+                            <p>A haven for creatives and night owls.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Minimalist Footer -->
+    <footer class="glass-footer">
+        <div class="container footer-flex">
+            <div class="brand">
+                <h2>ONYX ESPRESSO</h2>
+                <p>&copy; 2026. Built with HTML, CSS, JS.</p>
+            </div>
+            <div class="socials">
+                <a href="#" class="magnetic" data-strength="20">INSTA</a>
+                <a href="#" class="magnetic" data-strength="20">X</a>
+                <a href="#" class="magnetic" data-strength="20">TIKTOK</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Glassmorphism Booking Modal -->
+    <div id="booking-modal" class="modal-overlay">
+        <div class="glass-modal">
+            <button class="close-btn magnetic" data-strength="30"><i class="fas fa-times"></i></button>
+            
+            <div class="modal-left">
+                <h2>Secure Your<br><span class="accent">Table</span></h2>
+                <p>Reserve a spot in our exclusive lounge.</p>
+            </div>
+            
+            <div class="modal-right">
+                <form id="booking-form" novalidate>
+                    <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label>Your Name</label>
+                        <span class="err">Required (Min 3 chars)</span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required>
+                        <label>Email Address</label>
+                        <span class="err">Valid email required</span>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <input type="date" id="date" required>
+                            <span class="err">Future date required</span>
+                        </div>
+                        <div class="input-group">
+                            <select id="time" required>
+                                <option value="" disabled selected>Time</option>
+                                <option value="20:00">08:00 PM</option>
+                                <option value="22:00">10:00 PM</option>
+                                <option value="00:00">12:00 AM</option>
+                            </select>
+                            <span class="err">Select time</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-solid full">Confirm Request</button>
+                </form>
+                
+                <div id="form-success" class="success-state hidden">
+                    <i class="fas fa-check"></i>
+                    <h3>Confirmed.</h3>
+                    <p>Check your email for the access code.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/data.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
