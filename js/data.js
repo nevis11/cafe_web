@@ -5,7 +5,7 @@ const menuData = [
         category: "hot",
         price: "₹220",
         description: "Rich, full-bodied espresso with a perfectly balanced crema.",
-        image: "https://loremflickr.com/600/400/espresso?lock=1"
+        image: "https://picsum.photos/seed/espresso/600/400"
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const menuData = [
         category: "hot",
         price: "₹340",
         description: "Freshly steamed milk with vanilla-flavored syrup marked with espresso and caramel drizzle.",
-        image: "https://loremflickr.com/600/400/latte?lock=2"
+        image: "https://picsum.photos/seed/latte/600/400"
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const menuData = [
         category: "hot",
         price: "₹380",
         description: "Smooth and creamy matcha sweetened just right and served with steamed milk.",
-        image: "https://loremflickr.com/600/400/matcha?lock=3"
+        image: "https://picsum.photos/seed/matcha/600/400"
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const menuData = [
         category: "cold",
         price: "₹250",
         description: "Espresso shots topped with cold water produce a light layer of crema, served over ice.",
-        image: "https://loremflickr.com/600/400/icedcoffee?lock=4"
+        image: "https://picsum.photos/seed/icedcoffee/600/400"
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const menuData = [
         category: "cold",
         price: "₹300",
         description: "Handcrafted in small batches daily, slow-steeped in cool water for 20 hours.",
-        image: "https://loremflickr.com/600/400/coldbrew?lock=5"
+        image: "https://picsum.photos/seed/coldbrew/600/400"
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ const menuData = [
         category: "cold",
         price: "₹420",
         description: "Caramel syrup meets coffee, milk and ice for a rendezvous in the blender.",
-        image: "https://loremflickr.com/600/400/frappe?lock=6"
+        image: "https://picsum.photos/seed/frappe/600/400"
     },
     {
         id: 7,
@@ -53,7 +53,7 @@ const menuData = [
         category: "food",
         price: "₹280",
         description: "Flaky, buttery pastry baked fresh every morning.",
-        image: "https://loremflickr.com/600/400/croissant?lock=7"
+        image: "https://picsum.photos/seed/croissant/600/400"
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ const menuData = [
         category: "food",
         price: "₹260",
         description: "Soft muffin loaded with juicy blueberries and topped with a streusel crumb.",
-        image: "https://loremflickr.com/600/400/muffin?lock=8"
+        image: "https://picsum.photos/seed/muffin/600/400"
     },
     {
         id: 9,
@@ -69,6 +69,6 @@ const menuData = [
         category: "food",
         price: "₹550",
         description: "Smashed avocado on artisan sourdough topped with red pepper flakes and microgreens.",
-        image: "https://loremflickr.com/600/400/toast?lock=9"
+        image: "https://picsum.photos/seed/toast/600/400"
     }
 ];
