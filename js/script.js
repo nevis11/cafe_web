@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeBtn = document.getElementById('theme-toggle');
     const themeIcon = themeBtn.querySelector('i');
     
-    const savedTheme = localStorage.getItem('midnight-theme');
+    const savedTheme = localStorage.getItem('blep-theme');
     if(savedTheme) {
         document.body.setAttribute('data-theme', savedTheme);
         themeIcon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let next = current === 'dark' ? 'light' : 'dark';
         
         document.body.setAttribute('data-theme', next);
-        localStorage.setItem('midnight-theme', next);
+        localStorage.setItem('blep-theme', next);
         themeIcon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
     });
 
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuContainer = document.getElementById('menu-container');
     const searchInput = document.getElementById('menu-search');
     const tabs = document.querySelectorAll('.tab-pill');
-    let favorites = JSON.parse(localStorage.getItem('midnight-favs')) || [];
+    let favorites = JSON.parse(localStorage.getItem('blep-favs')) || [];
 
     function renderMenu(items) {
         menuContainer.innerHTML = '';
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     favorites.push(id);
                     this.classList.add('liked');
                 }
-                localStorage.setItem('midnight-favs', JSON.stringify(favorites));
+                localStorage.setItem('blep-favs', JSON.stringify(favorites));
             });
         });
     }
@@ -291,4 +291,25 @@ document.addEventListener('DOMContentLoaded', () => {
             this.parentElement.classList.remove('invalid');
         });
     });
+
+    /* ==========================================================================
+       Hamburger Mobile Menu
+       ========================================================================== */
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburgerBtn && navLinks) {
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('open');
+            navLinks.classList.toggle('open');
+        });
+
+        // Close menu when a nav link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerBtn.classList.remove('open');
+                navLinks.classList.remove('open');
+            });
+        });
+    }
 });
