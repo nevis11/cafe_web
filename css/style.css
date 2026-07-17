@@ -871,6 +871,23 @@ button {
     margin-bottom: 1rem;
 }
 
+.socials {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.glass-footer .socials a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.glass-footer .socials a:hover {
+    color: var(--accent);
+}
+
 /* ==========================================================================
    Responsive — Tablet & Mobile
    ========================================================================== */
